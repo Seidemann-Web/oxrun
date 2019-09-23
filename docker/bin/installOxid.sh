@@ -63,6 +63,8 @@ if [ ! -f "${DOCKER_DOCUMENT_ROOT}/config.inc.php" ]; then
 #        --adminUser="${OXID_ADMIN_PASSWORD}" \
 #        --adminPassword="${OXID_ADMIN_USERNAME}"
 
+    mkdir -p /data/source/tmp /data/source/log
+    chmod -R a+rwX /oxrun /data/source/tmp /data/source/log
 fi
 
 echo ""
