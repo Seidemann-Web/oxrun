@@ -1,5 +1,7 @@
 cd #!/usr/bin/env bash
 
+composer global require hirak/prestissimo
+
 ln -fs /oxrun/bin/oxrun /usr/local/bin
 
 if [ ! -f "/oxrun/vendor" ]; then
